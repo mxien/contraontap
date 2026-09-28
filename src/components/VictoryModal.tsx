@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { GameStats, Subject } from '../types/game';
 import confetti from 'canvas-confetti';
 import { Trophy, RotateCcw, Home, Star, Target, CheckCircle2, Clock } from 'lucide-react';
+import victoryBadgeImg from '../assets/images/contra_victory_badge_1790563075720.jpg';
 
 interface VictoryModalProps {
   stats: GameStats;
@@ -56,7 +57,7 @@ export const VictoryModal: React.FC<VictoryModalProps> = ({
         {/* Victory Badge Crest */}
         <div className="relative mx-auto w-24 h-24 rounded-2xl overflow-hidden border-2 border-amber-400 shadow-xl shadow-amber-500/20">
           <img 
-            src="/src/assets/images/contra_victory_badge_1790563075720.jpg" 
+            src={victoryBadgeImg} 
             alt="Victory Medal" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

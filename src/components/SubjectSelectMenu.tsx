@@ -7,6 +7,8 @@ import {
   Volume2, VolumeX, BookOpen, Flame
 } from 'lucide-react';
 import { sound } from '../services/soundService';
+import heroImg from '../assets/images/contra_hero_soldier_1790563046683.jpg';
+import battleBg from '../assets/images/contra_jungle_battle_1790563062141.jpg';
 
 interface SubjectSelectMenuProps {
   onStartGame: (subjectId: SubjectId, difficulty: GameDifficulty) => void;
@@ -33,7 +35,7 @@ export const SubjectSelectMenu: React.FC<SubjectSelectMenuProps> = ({
       {/* Background Graphic Ambient Glow */}
       <div 
         className="absolute inset-0 opacity-20 pointer-events-none bg-cover bg-center mix-blend-screen"
-        style={{ backgroundImage: `url('/src/assets/images/contra_jungle_battle_1790563062141.jpg')` }}
+        style={{ backgroundImage: `url(${battleBg})` }}
       />
       <div className="absolute inset-0 bg-radial-gradient from-transparent via-neutral-950/80 to-neutral-950 pointer-events-none" />
 
@@ -42,7 +44,7 @@ export const SubjectSelectMenu: React.FC<SubjectSelectMenuProps> = ({
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-lg overflow-hidden border border-amber-500/50 shadow-sm shrink-0">
             <img 
-              src="/src/assets/images/contra_hero_soldier_1790563046683.jpg" 
+              src={heroImg} 
               alt="Contra Commando" 
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"

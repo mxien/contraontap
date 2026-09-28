@@ -2,5 +2,7 @@
   "name": "Contra Ôn Tập Kiến Thức",
   "description": "Game hành động bắn súng Contra cổ điển kết hợp giải đáp trắc nghiệm kiến thức vượt ải đa môn học, chu kỳ ngày đêm, hệ thống vũ khí súng S, L và quản lý câu hỏi CRUD.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
